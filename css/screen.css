@@ -81,9 +81,20 @@ h3 {
   color: #17181a;
   font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
+h2 {
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+}
 
 * + h2 {
   margin-top: 48px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 h4,
