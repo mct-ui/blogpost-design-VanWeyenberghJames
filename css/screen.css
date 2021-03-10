@@ -82,6 +82,10 @@ h3 {
   font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
+* + h2 {
+  margin-top: 48px;
+}
+
 h4,
 h5,
 h6 {
