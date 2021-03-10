@@ -16,6 +16,37 @@
   src: url('../fonts/Inter-Bold.woff2') format('woff2');
 }
 
+/* 
+    Components: Author
+*/
+.c-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.c-author__image {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.c-author__name,
+.c-author__meta {
+  margin-bottom: 0;
+}
+
+.c-author__meta {
+  font-size: 14px;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 24px;
+}
+.c-author__name {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 /*
     Elements: Page
     ---
@@ -67,6 +98,12 @@ img {
     ---
     Default markup for typographic elements
 */
+h1,
+h2,
+h3 {
+  color: #17181a;
+  font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
+}
 
 h1 {
   font-size: 36px;
@@ -75,12 +112,6 @@ h1 {
   font-family: 'Playfair Display', serif;
 }
 
-h1,
-h2,
-h3 {
-  color: #17181a;
-  font-family: 'Inter Web', 'Helvetica Neue', Helvetica, arial, sans-serif;
-}
 h2 {
   font-size: 23px;
   line-height: 32px;
