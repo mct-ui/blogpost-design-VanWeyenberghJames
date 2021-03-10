@@ -48,6 +48,61 @@
 }
 
 /*
+    Components: Article
+*/
+.c-article__header,
+.c-article__body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article__header {
+  padding: 24px 24px 0;
+}
+
+@media (min-width: 786px) {
+  .c-article__header {
+    padding: 48px 48px 24px;
+  }
+  .c-article__author {
+    padding-bottom: 24px;
+  }
+  .c-article__body {
+    padding: 24px 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-article__body {
+    display: flex;
+    gap: 24px;
+  }
+  .c-article__author {
+    width: 25%;
+  }
+  .c-article__content {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-author {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/*
+    Utilities: max-width
+    --- 
+    Utility classes to put specific max widths onto elements.
+*/
+
+.u-max-width-sm {
+  max-width: 36em;
+}
+
+/*
     Elements: Page
     ---
     Default markup for page level elements
@@ -61,11 +116,9 @@ html {
   /*font-family: "Inter Web", 'Helvetica Neue', Helvetica, arial, sans-serif;*/
   font-family: 'droid-serif', Georgia, serif;
   color: #5c6366;
-  padding: 48px 24px 24px;
 }
 
 body {
-  max-width: 42em;
   margin: 0 auto;
 }
 
@@ -207,7 +260,6 @@ a:focus {
 
 @media (min-width: 768px) {
   html {
-    padding: 48px 48px 24px;
   }
   h1 {
     font-size: 58px;
